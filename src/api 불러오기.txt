@@ -1,0 +1,13 @@
+  _listMusic = async () => {
+    const albums = await this._callApi()
+    await this.setState({
+      albumList: albums
+    })
+    this._callOneAlbum()
+  }
+
+  _callApi = () => {
+    return fetch('http://ws.audioscrobbler.com/2.0/?method=tag.gettopalbums&tag=all&limit=4&page=1&api_key=e87431f958e5fa321c1dd874c4f9bbe7&format=json')
+    .then(album => album.json())
+    .catch(err => console.log(err))
+  }
