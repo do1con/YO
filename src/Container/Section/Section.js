@@ -21,24 +21,23 @@ export default class Section extends Component {
             </div>
             <div className="column is-hidden-touch is-hidden-desktop-only has-margin">
               <div className="notification">
-                <p class="title">This Website.....</p>
-                <p class="subtitle">Top tile</p>
+                <p className="title">This Website.....</p>
+                <p className="subtitle">Top tile</p>
                 <p>
-                  i built this website but still im thinking that im suck
-                  i built this website but still im thinking that im suck
-                  i built this website but still im thinking that im suck
-                  i built this website but still im thinking that im suck
-                  i built this website but still im thinking that im suck
-                  i built this website but still im thinking that im suck
-                  i built this website but still im thinking that im suck
-                  i built this website but still im thinking that im suck
-                  i built this website but still im thinking that im suck
-                  i built this website but still im thinking that im suck
-                  i built this website but still im thinking that im suck
-                  i built this website but still im thinking that im suck
-                  i built this website but still im thinking that im suck
-                  i built this website but still im thinking that im suck
-                  i built this website but still im thinking that im suck
+                  wef;oearjglaerjgalejrgskerjgaerkjghsktrjghstrkjnhsrtkjgns
+                  wef;oearjglaerjgalejrgskerjgaerkjghsktrjghstrkjnhsrtkjgns
+                  wef;oearjglaerjgalejrgskerjgaerkjghsktrjghstrkjnhsrtkjgns
+                  wef;oearjglaerjgalejrgskerjgaerkjghsktrjghstrkjnhsrtkjgns
+                  wef;oearjglaerjgalejrgskerjgaerkjghsktrjghstrkjnhsrtkjgns
+                  wef;oearjglaerjgalejrgskerjgaerkjghsktrjghstrkjnhsrtkjgns
+                  wef;oearjglaerjgalejrgskerjgaerkjghsktrjghstrkjnhsrtkjgns
+                  wef;oearjglaerjgalejrgskerjgaerkjghsktrjghstrkjnhsrtkjgns
+                  wef;oearjglaerjgalejrgskerjgaerkjghsktrjghstrkjnhsrtkjgns
+                  wef;oearjglaerjgalejrgskerjgaerkjghsktrjghstrkjnhsrtkjgns
+                  wef;oearjglaerjgalejrgskerjgaerkjghsktrjghstrkjnhsrtkjgns
+                  wef;oearjglaerjgalejrgskerjgaerkjghsktrjghstrkjnhsrtkjgns
+                  wef;oearjglaerjgalejrgskerjgaerkjghsktrjghstrkjnhsrtkjgns
+                  wef;oearjglaerjgalejrgskerjgaerkjghsktrjghstrkjnhsrtkjgns
                 </p>
               </div>
             </div>

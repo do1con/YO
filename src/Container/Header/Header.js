@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import './Header.css'
+import SignIn from '../Pages/SignIn.js'
 
 export default class Header extends Component {
 
-  state ={
-    burgerState: false
+  state = {
+    burgerState: false,
+    signInState: false,
+    login: false
   }
   
   _burgerToggle = () => {
@@ -21,8 +24,14 @@ export default class Header extends Component {
     }
   }
 
+  _swtichingSection = (value) => {
+    this.props._switchingSection(value)
+  }
+
   componentDidMount() {
     window.addEventListener('resize', this._resize)
+    /* document.querySelector('#signIn').addEventListener('click', this.props._switchingSection('signIn')) */
+    /* document.querySelector('#mainLogo').addEventListener('click',this.props._switchingSection('main')) */
   }
   
   componentWillUnmount() {
@@ -37,8 +46,8 @@ export default class Header extends Component {
             <div className="columns is-vcentered is-marginless">
               <div className="column is-two-thirds is-full-touch">
                 <div className="navbar-brand">
-                  <a href="#" className="navbar-item">
-                    <h1 className="is-size-1 is-size-4-touch has-text-weight-bold is-family-primary">YO</h1>
+                  <a href="#" className="navbar-item" id="mainLogo">
+                    <h1 className="is-size-1 is-size-4-touch has-text-weight-bold is-family-primary" onClick={() => this.props._switchingSection('Section')}>YO</h1>
                   </a>
                   <div className="navbar-burger burger" data-target="nav-menu" onClick={this._burgerToggle}>
                     <span></span>
@@ -84,7 +93,7 @@ export default class Header extends Component {
               <div className="column">
                 <div className="field is-grouped is-pulled-right">
                   <p className="control">
-                    <button className="button is-small is-link">
+                    <button className="button is-small is-link" id="signUp">
                       <span className="icon">
                         <i className="fa fa-user-plus"></i>
                       </span>
@@ -92,7 +101,7 @@ export default class Header extends Component {
                     </button>
                   </p>
                   <p className="control">
-                    <button className="button is-small">
+                    <button className="button is-small" onClick={() => this.props._switchingSection('SignIn')}>
                       <span className="icon">
                         <i className="fa fa-user"></i>
                       </span>
